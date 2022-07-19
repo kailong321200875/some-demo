@@ -28,7 +28,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     // 输出文件目录
     path: path.resolve(__dirname, '../dist'),
     // 输出文件名
-    filename: 'js/[name].js'
+    filename: 'js/[name].js',
+    chunkFilename: 'js/[name].js'
   },
 
   // 源码映射
@@ -56,8 +57,16 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   // 插件
   plugins: [
     new HtmlWebpackPlugin({
+      filename: 'index.html',
       template: './src/views/index/index.html',
-      favicon: path.resolve(__dirname, '../public/favicon.ico')
+      favicon: path.resolve(__dirname, '../public/favicon.ico'),
+      chunks: ['chunk-vendors', 'index']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'frame-animation.html',
+      template: './src/views/frame-animation/frame-animation.html',
+      favicon: path.resolve(__dirname, '../public/favicon.ico'),
+      chunks: ['chunk-vendors', 'frame-animation']
     }),
     new ESLintPlugin({
       extensions: ['js', 'html']

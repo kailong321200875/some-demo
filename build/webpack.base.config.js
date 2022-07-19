@@ -14,7 +14,8 @@ module.exports = {
   // 打包入口地址
   entry: {
     // 由于可能是多页，所以采用对象的形式
-    index: ['./src/views/index/index.js']
+    index: './src/views/index/index.js',
+    'frame-animation': './src/views/frame-animation/frame-animation.js',
   },
 
   // 模块resolve的规则
@@ -53,7 +54,14 @@ module.exports = {
               sourceMap: !isProduction
             }
           },
-          'less-loader'
+          {
+            loader: 'less-loader',
+            options: {
+              lessOptions: {
+                javascriptEnabled: true
+              }
+            }
+          }
         ]
       },
       // 解析 html 中的 src 路径

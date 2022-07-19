@@ -7,19 +7,37 @@
     <title>Index</title>
   </head>
   <body>
-    <div class="content">
-      <div class="content__background"></div>
-      <div class="content__icon">
-        <i class="iconfont icon-weixin"></i>
-        <i class="iconfont icon-facebookfacebook52"></i>
-        <i class="iconfont icon-github"></i>
-      </div>
-      <div class="content__video">
-        <video controls>
-          <source src="~@/assets/medias/video.mp4" type="audio/mp4" />
-        </video>
-      </div>
-      <audio src="~@/assets/medias/有一种爱叫放手.mp3" controls="controls"> </audio>
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-white sidebars-wrap">
+      <a
+        href="/"
+        class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom"
+      >
+        <span class="fs-5 fw-semibold">一些例子</span>
+      </a>
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <button
+            class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+            data-bs-toggle="collapse"
+            data-bs-target="#home-collapse"
+            aria-expanded="true"
+          >
+            CSS 相关
+          </button>
+          <div class="collapse show" id="home-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li>
+                <a href="#" class="link-dark d-inline-flex text-decoration-none rounded">
+                  CSS 帧动画
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="content-wrap">
+      <iframe src="frame-animation.html" frameborder="0" width="100%" height="100%"></iframe>
     </div>
   </body>
 </html>
