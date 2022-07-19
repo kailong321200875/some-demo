@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Index</title>
+    <title>CSS 帧动画</title>
   </head>
   <body>
     <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-white sidebars-wrap">
@@ -22,13 +22,26 @@
             data-bs-target="#home-collapse"
             aria-expanded="true"
           >
-            CSS 相关
+            过渡动画相关
           </button>
           <div class="collapse show" id="home-collapse">
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
               <li>
-                <a href="#" class="link-dark d-inline-flex text-decoration-none rounded">
+                <a
+                  href="#"
+                  class="link-dark d-inline-flex text-decoration-none rounded to"
+                  data-url="frame-animation"
+                >
                   CSS 帧动画
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="link-dark d-inline-flex text-decoration-none rounded to"
+                  data-url="scroll-animation"
+                >
+                  滚动条过渡动画
                 </a>
               </li>
             </ul>
@@ -37,7 +50,13 @@
       </ul>
     </div>
     <div class="content-wrap">
-      <iframe src="frame-animation.html" frameborder="0" width="100%" height="100%"></iframe>
+      <iframe
+        id="content-iframe"
+        src="frame-animation.html"
+        frameborder="0"
+        width="100%"
+        height="100%"
+      ></iframe>
     </div>
   </body>
 </html>

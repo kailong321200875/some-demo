@@ -16,6 +16,7 @@ module.exports = {
     // 由于可能是多页，所以采用对象的形式
     index: './src/views/index/index.js',
     'frame-animation': './src/views/frame-animation/frame-animation.js',
+    'scroll-animation': './src/views/scroll-animation/scroll-animation.js'
   },
 
   // 模块resolve的规则
@@ -34,9 +35,9 @@ module.exports = {
   // 不同类型模块的处理规则
   module: {
     rules: [
-      // 处理 css、less 文件
+      // 处理 less 文件
       {
-        test: /\.(css|less)$/,
+        test: /\.(less)$/,
         use: [
           isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
           {
@@ -60,6 +61,53 @@ module.exports = {
               lessOptions: {
                 javascriptEnabled: true
               }
+            }
+          }
+        ]
+      },
+      // 处理 scss 文件
+      {
+        test: /\.(scss|sass)$/,
+        use: [
+          isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              // 是否使用source-map
+              sourceMap: !isProduction,
+              esModule: false
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              // 是否使用source-map
+              sourceMap: !isProduction
+            }
+          },
+          {
+            loader: 'sass-loader'
+          }
+        ]
+      },
+      // 处理 css 文件
+      {
+        test: /\.(css)$/,
+        use: [
+          isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              // 是否使用source-map
+              sourceMap: !isProduction,
+              esModule: false
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              // 是否使用source-map
+              sourceMap: !isProduction
             }
           }
         ]

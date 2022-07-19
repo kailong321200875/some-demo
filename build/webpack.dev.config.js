@@ -68,6 +68,12 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       favicon: path.resolve(__dirname, '../public/favicon.ico'),
       chunks: ['chunk-vendors', 'frame-animation']
     }),
+    new HtmlWebpackPlugin({
+      filename: 'scroll-animation.html',
+      template: './src/views/scroll-animation/scroll-animation.html',
+      favicon: path.resolve(__dirname, '../public/favicon.ico'),
+      chunks: ['chunk-vendors', 'scroll-animation']
+    }),
     new ESLintPlugin({
       extensions: ['js', 'html']
     })

@@ -1,0 +1,30 @@
+/**
+ * @mixins
+ * @param {String} $img: 图片路径
+ * @param {Length} $w: 每一帧宽度
+ * @param {Length} $h: 每一帧高度
+ * @param {Number} $frame: 总帧数
+ * @param {Time} $t: 动画总时长
+ */
+ @mixin frame-run($img, $w, $h, $frame, $t: 2s) {
+  width: $w;
+  height: $h;
+  background-image: url(#{$img});
+  background-repeat: no-repeat;
+  background-size: 100% * $frame auto;
+  animation: frame-animation #{$t} steps($frame) both infinite;
+
+  @keyframes frame-animation {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: #{100% + calc(100% / ($frame - 1))} 0;
+    }
+  }
+}
+
+.frame-animation2 {
+  margin: 0 auto;
+  @include frame-run('~@/assets/imgs/waiting-nohash.png', 127px, 200px, 45);
+}

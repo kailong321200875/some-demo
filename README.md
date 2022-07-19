@@ -4,6 +4,7 @@
 
 整理一些有趣的demo及知识点
 
-## CSS 相关
+## 过渡动画相关
 
 - [CSS 帧动画](https://github.com/kailong321200875/some-demo/tree/master/src/views/frame-animation/README.md)
+- [滚动条过渡动画](https://github.com/kailong321200875/some-demo/tree/master/src/views/scroll-animation/README.md)
