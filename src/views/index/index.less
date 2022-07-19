@@ -4,18 +4,18 @@
 
 
 body {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
   position: relative;
+  min-height: 100vh;
+  min-height: fill-available;
 }
 
 html {
-  height: -webkit-fill-available;
+  height: fill-available;
 }
 
 main {
   height: 100vh;
-  height: -webkit-fill-available;
+  height: fill-available;
   max-height: 100vh;
   overflow-x: auto;
   overflow-y: hidden;
@@ -31,12 +31,13 @@ main {
 .btn-toggle {
   padding: .25rem .5rem;
   font-weight: 600;
-  color: rgba(0, 0, 0, .65);
+  color: rgb(0 0 0 / 65%);
   background-color: transparent;
 }
+
 .btn-toggle:hover,
 .btn-toggle:focus {
-  color: rgba(0, 0, 0, .85);
+  color: rgb(0 0 0 / 85%);
   background-color: #d2f4ea;
 }
 
@@ -49,8 +50,9 @@ main {
 }
 
 .btn-toggle[aria-expanded="true"] {
-  color: rgba(0, 0, 0, .85);
+  color: rgb(0 0 0 / 85%);
 }
+
 .btn-toggle[aria-expanded="true"]::before {
   transform: rotate(90deg);
 }
@@ -60,6 +62,7 @@ main {
   margin-top: .125rem;
   margin-left: 1.25rem;
 }
+
 .btn-toggle-nav a:hover,
 .btn-toggle-nav a:focus {
   background-color: #d2f4ea;
@@ -70,19 +73,20 @@ main {
 }
 
 .sidebars-wrap {
+  position: relative;
   width: 280px;
   height: 100vh;
-  overflow-y: auto;
   overflow-x: hidden;
-  position: relative;
+  overflow-y: auto;
+
   &::after {
-    content: "";
-    width: 1px;
-    height: 100%;
-    background-color: #e8e8e8;
     position: absolute;
     top: 0;
     right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #e8e8e8;
+    content: "";
   }
 }
 
