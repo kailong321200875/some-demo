@@ -80,6 +80,12 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       favicon: path.resolve(__dirname, '../public/favicon.ico'),
       chunks: ['chunk-vendors', 'lottie']
     }),
+    new HtmlWebpackPlugin({
+      filename: 'img-theme.html',
+      template: './src/views/img-theme/img-theme.html',
+      favicon: path.resolve(__dirname, '../public/favicon.ico'),
+      chunks: ['chunk-vendors', 'img-theme']
+    }),
     new ESLintPlugin({
       extensions: ['js', 'html']
     })

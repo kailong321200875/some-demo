@@ -59,6 +59,12 @@ const proWebpackConfig = merge(baseWebpackConfig, {
       favicon: path.resolve(__dirname, '../public/favicon.ico'),
       chunks: ['chunk-vendors', 'lottie']
     }),
+    new HtmlWebpackPlugin({
+      template: './src/views/img-theme/img-theme.html',
+      filename: 'html/img-theme.html',
+      favicon: path.resolve(__dirname, '../public/favicon.ico'),
+      chunks: ['chunk-vendors', 'img-theme']
+    }),
 
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash].css'

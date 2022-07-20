@@ -17,7 +17,8 @@ module.exports = {
     index: './src/views/index/index.js',
     'frame-animation': './src/views/frame-animation/frame-animation.js',
     'scroll-animation': './src/views/scroll-animation/scroll-animation.js',
-    'lottie': './src/views/lottie/lottie.js'
+    'lottie': './src/views/lottie/lottie.js',
+    'img-theme': './src/views/img-theme/img-theme.js'
   },
 
   // 模块resolve的规则
