@@ -53,6 +53,12 @@ const proWebpackConfig = merge(baseWebpackConfig, {
       favicon: path.resolve(__dirname, '../public/favicon.ico'),
       chunks: ['chunk-vendors', 'scroll-animation']
     }),
+    new HtmlWebpackPlugin({
+      template: './src/views/lottie/lottie.html',
+      filename: 'html/lottie.html',
+      favicon: path.resolve(__dirname, '../public/favicon.ico'),
+      chunks: ['chunk-vendors', 'lottie']
+    }),
 
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash].css'

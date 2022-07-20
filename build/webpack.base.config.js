@@ -16,7 +16,8 @@ module.exports = {
     // 由于可能是多页，所以采用对象的形式
     index: './src/views/index/index.js',
     'frame-animation': './src/views/frame-animation/frame-animation.js',
-    'scroll-animation': './src/views/scroll-animation/scroll-animation.js'
+    'scroll-animation': './src/views/scroll-animation/scroll-animation.js',
+    'lottie': './src/views/lottie/lottie.js'
   },
 
   // 模块resolve的规则

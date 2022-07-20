@@ -74,6 +74,12 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       favicon: path.resolve(__dirname, '../public/favicon.ico'),
       chunks: ['chunk-vendors', 'scroll-animation']
     }),
+    new HtmlWebpackPlugin({
+      filename: 'lottie.html',
+      template: './src/views/lottie/lottie.html',
+      favicon: path.resolve(__dirname, '../public/favicon.ico'),
+      chunks: ['chunk-vendors', 'lottie']
+    }),
     new ESLintPlugin({
       extensions: ['js', 'html']
     })
