@@ -5,8 +5,8 @@ let defaultUrl = 'frame-animation'
 
 window.onload = function () {
   const urlParams = new URLSearchParams(window.location.search)
-  const type = urlParams.get('type')
-  const name = urlParams.get('name')
+  const type = urlParams.get('type') || 'frame-animation'
+  const name = urlParams.get('name') || 'CSS 帧动画'
   document.title = name
   const iframe = document.getElementById('content-iframe')
   iframe.src = `${type}.html`
