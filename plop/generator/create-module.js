@@ -1,5 +1,6 @@
 // 首字母转大写
 const toUpperCase = (str) => str.charAt(0).toUpperCase() + str.slice(1)
+const writeFile = require('../utils/index')
 
 module.exports = function (plop) {
   plop.setGenerator('createModule', {
@@ -62,4 +63,8 @@ module.exports = function (plop) {
       return actions
     }
   })
+  // 属实硬编码了。。
+  setTimeout(() => {
+    writeFile()
+  }, 3000)
 }

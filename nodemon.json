@@ -1,0 +1,7 @@
+{
+  "watch": [
+    "build/**",
+    "config/**"
+  ],
+  "ext": "js,json"
+}

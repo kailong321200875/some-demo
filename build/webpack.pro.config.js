@@ -17,6 +17,8 @@ const TerserPlugin = require('terser-webpack-plugin')
 // 引入基础配置文件
 const baseWebpackConfig = require('./webpack.base.config')
 
+const utils = require('./utils')
+
 const proWebpackConfig = merge(baseWebpackConfig, {
   // 模式，必填项
   mode: 'production',
@@ -35,36 +37,7 @@ const proWebpackConfig = merge(baseWebpackConfig, {
 
   // 插件
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/views/index/index.html',
-      filename: 'html/index.html',
-      favicon: path.resolve(__dirname, '../public/favicon.ico'),
-      chunks: ['chunk-vendors', 'index']
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/views/frame-animation/frame-animation.html',
-      filename: 'html/frame-animation.html',
-      favicon: path.resolve(__dirname, '../public/favicon.ico'),
-      chunks: ['chunk-vendors', 'frame-animation']
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/views/scroll-animation/scroll-animation.html',
-      filename: 'html/scroll-animation.html',
-      favicon: path.resolve(__dirname, '../public/favicon.ico'),
-      chunks: ['chunk-vendors', 'scroll-animation']
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/views/lottie/lottie.html',
-      filename: 'html/lottie.html',
-      favicon: path.resolve(__dirname, '../public/favicon.ico'),
-      chunks: ['chunk-vendors', 'lottie']
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/views/img-theme/img-theme.html',
-      filename: 'html/img-theme.html',
-      favicon: path.resolve(__dirname, '../public/favicon.ico'),
-      chunks: ['chunk-vendors', 'img-theme']
-    }),
+    ...utils.getProHtmls(),
 
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash].css'

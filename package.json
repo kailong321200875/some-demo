@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": " pnpm run tems & nodemon --exec pnpm run serve",
     "serve": "cross-env NODE_ENV=development webpack serve --progress --no-stats --config ./build/webpack.dev.config.js",
     "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.pro.config.js",
     "p": "plop --plopfile ./plop/generator/create-module.js",
@@ -15,7 +16,8 @@
     "lint:style": "stylelint --fix \"**/*.{less,postcss,css,scss}\"",
     "lint:lint-staged": "lint-staged -c ./.husky/lintstagedrc.js",
     "prepare": "husky install",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tems": "node ./plop/utils/tems.js"
   },
   "repository": {
     "type": "git",
@@ -50,6 +52,7 @@
     "less-loader": "^11.0.0",
     "lint-staged": "^13.0.3",
     "mini-css-extract-plugin": "^2.6.1",
+    "nodemon": "^2.0.19",
     "plop": "^3.1.1",
     "postcss": "^8.4.14",
     "postcss-html": "^1.5.0",
@@ -57,6 +60,7 @@
     "postcss-loader": "^7.0.1",
     "postcss-preset-env": "^7.7.2",
     "prettier": "^2.7.1",
+    "require-context": "^1.1.0",
     "sass": "^1.53.0",
     "sass-loader": "^13.0.2",
     "style-loader": "^3.3.1",

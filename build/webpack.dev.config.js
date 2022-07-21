@@ -12,6 +12,8 @@ const ESLintPlugin = require('eslint-webpack-plugin')
 // 引入基础配置文件
 const baseWebpackConfig = require('./webpack.base.config')
 
+const utils = require('./utils')
+
 const devWebpackConfig = merge(baseWebpackConfig, {
   // 模式，必填项
   mode: 'development',
@@ -56,36 +58,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
 
   // 插件
   plugins: [
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: './src/views/index/index.html',
-      favicon: path.resolve(__dirname, '../public/favicon.ico'),
-      chunks: ['chunk-vendors', 'index']
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'frame-animation.html',
-      template: './src/views/frame-animation/frame-animation.html',
-      favicon: path.resolve(__dirname, '../public/favicon.ico'),
-      chunks: ['chunk-vendors', 'frame-animation']
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'scroll-animation.html',
-      template: './src/views/scroll-animation/scroll-animation.html',
-      favicon: path.resolve(__dirname, '../public/favicon.ico'),
-      chunks: ['chunk-vendors', 'scroll-animation']
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'lottie.html',
-      template: './src/views/lottie/lottie.html',
-      favicon: path.resolve(__dirname, '../public/favicon.ico'),
-      chunks: ['chunk-vendors', 'lottie']
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'img-theme.html',
-      template: './src/views/img-theme/img-theme.html',
-      favicon: path.resolve(__dirname, '../public/favicon.ico'),
-      chunks: ['chunk-vendors', 'img-theme']
-    }),
+    ...utils.getDevHtmls(),
     new ESLintPlugin({
       extensions: ['js', 'html']
     })

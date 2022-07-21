@@ -9,17 +9,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 // 引入静态资源复制插件
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const utils = require('./utils')
 
 module.exports = {
   // 打包入口地址
-  entry: {
-    // 由于可能是多页，所以采用对象的形式
-    index: './src/views/index/index.js',
-    'frame-animation': './src/views/frame-animation/frame-animation.js',
-    'scroll-animation': './src/views/scroll-animation/scroll-animation.js',
-    'lottie': './src/views/lottie/lottie.js',
-    'img-theme': './src/views/img-theme/img-theme.js'
-  },
+  entry: utils.getEntry(),
 
   // 模块resolve的规则
   resolve: {
