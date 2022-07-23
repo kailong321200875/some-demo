@@ -13,3 +13,7 @@
 ## 图片相关
 
 - [提取图片主题色](https://github.com/kailong321200875/some-demo/tree/master/src/views/img-theme/README.md)
+
+## 视频相关
+
+- [画中画模式](https://github.com/kailong321200875/some-demo/tree/master/src/views/pip/README.md)
