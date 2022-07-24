@@ -9,8 +9,12 @@ function lazyload() {
         if (entry.isIntersecting) {
           // 在这里，通常也可以用于埋点曝光统计
           const img = entry.target
-          img.setAttribute('src', img.getAttribute('data-src'))
-          observer.unobserve(img)
+          const creatImg = new Image()
+          creatImg.src = img.getAttribute('data-src')
+          creatImg.onload = () => {
+            img.setAttribute('src', img.getAttribute('data-src'))
+            observer.unobserve(img)
+          }
         }
       })
     },
