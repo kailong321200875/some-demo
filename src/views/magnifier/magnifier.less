@@ -1,0 +1,49 @@
+@import '~minireset.css/minireset.css';
+@import '@/assets/fonts/iconfont.css';
+
+.wrap {
+  display: block;
+  width: 400px;
+  margin: 50px;
+  border: 1px solid #ccc;
+  position: relative;
+
+  .small-box {
+    z-index: 1;
+    .move-box {
+      display: none;
+      position: absolute;
+      z-index: 2;
+      width: 160px;
+      height: 120px;
+      background: #ffffcc;
+      border: 1px solid #ccc;
+      opacity: .5;
+      pointer-events: none;
+    }
+
+    .small-img {
+      width: 400px;
+      display: block;
+    }
+  }
+
+  .big-box {
+    position: absolute;
+    top: 0;
+    left: 460px;
+    width: 400px;
+    height: 360px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    z-index: 1;
+    pointer-events: none;
+    display: none;
+
+    .big-img {
+      position: absolute;
+      z-index: 5;
+      max-width: none;
+    }
+  }
+}
