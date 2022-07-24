@@ -1,14 +1,17 @@
 const requireContext = require('require-context')
 const path = require('path')
 const fs = require('fs')
+const os = require('os')
 
 const template = []
 
 function writeFile() {
   const context = requireContext(path.join(__dirname, '../../src/views/'), true, /\.html$/)
   context.keys().forEach((key) => {
-    // key.match(/\/([^/]+)\.html$/)
-    const name = key.match(/\/([^/]+)\.html$/).filter((item) => item[1])[1]
+    // 是否是windows系统
+    const isWindows = os.platform() === 'win32'
+    const newKey = !isWindows ? key : key.replace(/\\/, '/')
+    const name = newKey.match(/\/([^/]+)\.html$/).filter((item) => item[1])[1]
     const templateObj = {
       name,
       entry: `./src/views/${name}/${name}.js`,
