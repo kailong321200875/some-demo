@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": " pnpm run tems & nodemon --exec pnpm run serve",
+    "dev": "nodemon --exec pnpm run serve",
     "serve": "cross-env NODE_ENV=development webpack serve --progress --no-stats --config ./build/webpack.dev.config.js",
     "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.pro.config.js",
     "p": "plop --plopfile ./plop/generator/create-module.js",

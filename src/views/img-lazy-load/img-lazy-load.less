@@ -1,0 +1,24 @@
+@import '~minireset.css/minireset.css';
+@import '@/assets/fonts/iconfont.css';
+
+div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1000px;
+}
+
+img {
+  margin-top: 30px;
+  width: 518.4px;
+  height: 345.6px;
+  position: relative;
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #999;
+  }
+}
