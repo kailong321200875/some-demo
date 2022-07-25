@@ -2,29 +2,30 @@
 @import '@/assets/fonts/iconfont.css';
 
 .wrap {
+  position: relative;
   display: block;
   width: 400px;
   margin: 50px;
   border: 1px solid #ccc;
-  position: relative;
 
   .small-box {
     z-index: 1;
+
     .move-box {
-      display: none;
       position: absolute;
       z-index: 2;
+      display: none;
       width: 160px;
       height: 120px;
-      background: #ffffcc;
+      pointer-events: none;
+      background: #ffc;
       border: 1px solid #ccc;
       opacity: .5;
-      pointer-events: none;
     }
 
     .small-img {
-      width: 400px;
       display: block;
+      width: 400px;
     }
   }
 
@@ -32,13 +33,13 @@
     position: absolute;
     top: 0;
     left: 460px;
+    z-index: 1;
+    display: none;
     width: 400px;
     height: 360px;
     overflow: hidden;
-    border: 1px solid #ccc;
-    z-index: 1;
     pointer-events: none;
-    display: none;
+    border: 1px solid #ccc;
 
     .big-img {
       position: absolute;
