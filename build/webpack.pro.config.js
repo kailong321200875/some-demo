@@ -53,8 +53,8 @@ const proWebpackConfig = merge(baseWebpackConfig, {
           // 生产环境自动删除console
           compress: {
             drop_debugger: true,
-            drop_console: true,
-            pure_funcs: ['console.log']
+            // drop_console: true,
+            // pure_funcs: ['console.log']
           }
         },
         parallel: true,
