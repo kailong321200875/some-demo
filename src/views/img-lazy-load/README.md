@@ -5,7 +5,3 @@
 现在 javaScript 提供了一个 `IntersectionObserver` ，可以更好的帮助我们实现。
 
 [参考文档](https://developer.mozilla.org/zh-CN/docs/Web/API/IntersectionObserver#%E5%8F%82%E8%80%83)
-
-# 官方文档
-
-[Immer](https://immerjs.github.io/immer/zh-CN/)
