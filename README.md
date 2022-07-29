@@ -20,7 +20,10 @@
 
 - [画中画模式](https://github.com/kailong321200875/some-demo/tree/master/src/views/pip/README.md)
 
-
 ## 布局相关
 
 - [瀑布流](https://github.com/kailong321200875/some-demo/tree/master/src/views/waterfall-flow/README.md)
+
+## javaScript 相关
+
+- [高性能的深拷贝](https://github.com/kailong321200875/some-demo/tree/master/src/views/deep-clone/README.md)
