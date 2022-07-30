@@ -25,6 +25,10 @@
 
 - [瀑布流](https://github.com/kailong321200875/some-demo/tree/master/src/views/waterfall-flow/README.md)
 
-## javaScript 相关
+## JavaScript 相关
 
 - [高性能的深拷贝](https://github.com/kailong321200875/some-demo/tree/master/src/views/deep-clone/README.md)
+
+## CSS 相关
+
+- [不同类型的字体](https://github.com/kailong321200875/some-demo/tree/master/src/views/fonts/README.md)
