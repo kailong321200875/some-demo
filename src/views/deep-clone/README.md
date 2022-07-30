@@ -4,7 +4,7 @@
 
 这里介绍一个插件 `immer`，他的实现原理如下：
 
-https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ad8820eb1ca7457f987a85dd9c275df5~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?
+![alt](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ad8820eb1ca7457f987a85dd9c275df5~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp?)
 
 # 官方文档
 
