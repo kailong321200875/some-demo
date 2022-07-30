@@ -79,6 +79,7 @@
     "@popperjs/core": "^2.11.5",
     "bootstrap": "^5.2.0",
     "immer": "^9.0.15",
+    "jquery": "^3.6.0",
     "lodash-es": "^4.17.21",
     "lottie-web": "^5.9.6",
     "minireset.css": "^0.0.7",
