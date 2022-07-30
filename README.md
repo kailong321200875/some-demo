@@ -15,6 +15,7 @@
 - [提取图片主题色](https://github.com/kailong321200875/some-demo/tree/master/src/views/img-theme/README.md)
 - [图片懒加载](https://github.com/kailong321200875/some-demo/tree/master/src/views/img-lazy-load/README.md)
 - [放大镜](https://github.com/kailong321200875/some-demo/tree/master/src/views/magnifier/README.md)
+- [交互式图片鼠标悬停景深对焦效果](https://github.com/kailong321200875/some-demo/tree/master/src/views/deep-focus/README.md)
 
 ## 视频相关
 

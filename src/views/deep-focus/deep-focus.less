@@ -1,0 +1,32 @@
+@import '~minireset.css/minireset.css';
+@import '@/assets/fonts/iconfont.css';
+
+.deep-focus {
+  width: 100%;
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+  &>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    &>img {
+      width: 110%;
+      height: 100%;
+      // 对图片进行剪切，保留原始比例
+      object-fit: cover;
+      // css 变量 offset：偏移量，blur：模糊值，数值越大，模糊越大
+      --offset: 0;
+      --blur: 2px;
+      // 设置水平偏移量
+      transform: translateX(var(--offset));
+      // 设置模糊值
+      filter: blur(var(--blur));
+    }
+  }
+}
