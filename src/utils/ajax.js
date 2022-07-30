@@ -1,12 +1,13 @@
-const urlPath =
-  process.env.NODE_ENV === 'development'
-    ? 'http://192.168.168.104:8324/'
-    : 'https://www.shoufacm.com/'
+// const urlPath =
+//   process.env.NODE_ENV === 'development'
+//     ? 'http://192.168.168.104:8324/'
+//     : 'https://www.shoufacm.com/'
+import $ from 'jquery'
 
 const ajax = function (type, data, url, headersType) {
   return new Promise(function (resolve, reject) {
     $.ajax({
-      url: urlPath + url,
+      url: url,
       type: type || 'post',
       dataType: 'JSON',
       data: data,
