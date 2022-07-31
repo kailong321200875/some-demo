@@ -1,54 +1,61 @@
 import './particle-effect.less'
 import '@/styles/base.css'
 
-const canvas = document.getElementById('canvas1')
-const context = canvas.getContext('2d')
-canvas.width = 400
-canvas.height = 400
+const ctx = document.getElementById('canvas')
+const content = ctx.getContext('2d')
 
-// 起始一条路径，或重置当前路径
-context.beginPath()
-// 创建弧/曲线
-context.arc(100, 100, 50, 0, Math.PI * 2, true)
-// 创建从当前点回到起始点的路径
-context.closePath()
-// 设置或返回用于填充绘画的颜色、渐变或模式
-context.fillStyle = 'rgb(255,255,255)'
-// 设置模糊程度
-context.shadowBlur = 20
-context.shadowColor = '#fff'
-// 填充当前绘图（路径）
-context.fill()
+const WIDTH = document.documentElement.clientWidth
+const HEIGHT = document.documentElement.clientHeight
 
-// ================================================================
+const round = []
+const initRoundPopulation = 100
 
-const canvas2 = document.getElementById('canvas2')
-const context2 = canvas2.getContext('2d')
-canvas2.width = 400
-canvas2.height = 400
+ctx.width = WIDTH
+ctx.height = HEIGHT
 
-// 起始一条路径，或重置当前路径
-context2.beginPath()
-context2.moveTo(100, 100)
-context2.lineTo(200, 200)
-context2.strokeStyle = 'rgb(255,255,255)'
-context2.stroke()
+class Round_item {
+  constructor(index, x, y) {
+    this.x = x
+    this.y = y
+    this.index = index
+    this.r = Math.random() * 2 + 1
+    const alpha = (Math.floor(Math.random() * 10) + 1) / 10 / 2
+    this.color = 'rgba(255,255,255,' + alpha + ')'
+  }
 
-// ================================================================
+  draw() {
+    content.fillStyle = this.color
+    content.shadowBlur = this.r * 2
+    content.beginPath()
+    content.arc(this.x, this.y, this.r, 0, 2 * Math.PI, false)
+    content.closePath()
+    content.fill()
+  }
 
-const canvas3 = document.getElementById('canvas3')
-const context3 = canvas3.getContext('2d')
-canvas3.width = 400
-canvas3.height = 400
+  move() {
+    this.y -= 0.15
+    if (this.y <= -10) {
+      this.y = HEIGHT + 10
+    }
+    this.draw()
+  }
+}
 
-context3.beginPath()
-// 绘制实心矩形
-const grd = context3.createLinearGradient(10, 10, 10, 100)
-grd.addColorStop(0, 'pink')
-grd.addColorStop(1, 'white')
-context3.fillStyle = grd
-context3.fillRect(10, 10, 100, 100)
+function init() {
+  for (let i = 0; i < initRoundPopulation; i++) {
+    round[i] = new Round_item(i, Math.random() * WIDTH, Math.random() * HEIGHT)
+    round[i].draw()
+  }
+  animate()
+}
 
-context3.strokeStyle = '#fff'
-// 绘制空心矩形
-context3.strokeRect(130, 10, 100, 100)
+function animate() {
+  content.clearRect(0, 0, WIDTH, HEIGHT)
+
+  for (const i in round) {
+    round[i].move()
+  }
+  requestAnimationFrame(animate)
+}
+
+init()
