@@ -32,3 +32,7 @@
 ## CSS 相关
 
 - [不同类型的字体](https://github.com/kailong321200875/some-demo/tree/master/src/views/fonts/README.md)
+
+## Canvas 相关
+
+- [Canvas 基础绘制](https://github.com/kailong321200875/some-demo/tree/master/src/views/canvas-foundation/README.md)
