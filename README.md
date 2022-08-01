@@ -36,5 +36,5 @@
 ## Canvas 相关
 
 - [Canvas 基础绘制](https://github.com/kailong321200875/some-demo/tree/master/src/views/canvas-foundation/README.md)
-- [粒子特效](https://github.com/kailong321200875/some-demo/tree/master/src/views/particle-effect/README.md)
-- [鼠标和屏幕互动](https://github.com/kailong321200875/some-demo/tree/master/src/views/mouse-interaction/README.md)
+<!-- - [粒子特效](https://github.com/kailong321200875/some-demo/tree/master/src/views/particle-effect/README.md)
+- [鼠标和屏幕互动](https://github.com/kailong321200875/some-demo/tree/master/src/views/mouse-interaction/README.md) -->
