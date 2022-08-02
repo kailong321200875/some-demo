@@ -1,0 +1,82 @@
+@import '~minireset.css/minireset.css';
+@import '@/assets/fonts/iconfont.css';
+
+div {
+	position: relative;
+	float: left;
+	width: 180px;
+	height: 180px;
+	margin: 50px;
+	border: 20px dashed #2196f3;
+}
+
+// 中间白色底色是伪元素
+.style_one {
+	background: #9c27b0;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: #fff;
+		content: "";
+	}
+}
+
+// 中间白色底色是背景色
+.style_two {
+	background: #fff;
+	background-clip: padding-box;
+
+	&::before {
+		position: absolute;
+		top: -20px;
+		right: -20px;
+		bottom: -20px;
+		left: -20px;
+		z-index: -1;
+		background: #969;
+		content: "";
+	}
+}
+
+// 径向渐变
+.style_three {
+	background-image: radial-gradient(#fff 100px, transparent 0px);
+	background-repeat: no-repeat;
+
+	&::after {
+		position: absolute;
+		top: -20px;
+		right: -20px;
+		bottom: -20px;
+		left: -20px;
+		z-index: -1;
+		background: deeppink;
+		content: "";
+	}
+}
+
+// 内阴影
+.style_shadow {
+	background: yellowgreen;
+	box-shadow: inset 180px 0 0 0 #fff;
+}
+
+// outline + 伪类
+.style_outline {
+	border: 20px solid #ffc107;
+
+	&::before{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		content: "";
+    // https://developer.mozilla.org/zh-CN/docs/Web/CSS/outline
+		outline: 20px dashed #2196f3;
+	}
+}

@@ -57,6 +57,14 @@ module.exports = function (plop) {
             path: `../../src/views/${moduleName}/${moduleName}.less`,
             // 使用哪个模版
             templateFile: '../template/create-module-less.hbs'
+          },
+          {
+            // 类型新增
+            type: 'add',
+            // 存放路径
+            path: `../../src/views/${moduleName}/README.md`,
+            // 使用哪个模版
+            templateFile: '../template/create-module-md.hbs'
           }
         )
       }

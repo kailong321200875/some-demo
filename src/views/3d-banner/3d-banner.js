@@ -2,7 +2,7 @@ import './3d-banner.less'
 import '@/styles/base.css'
 
 // 数值越大，角度越大
-const ANGLE = 20
+const ANGLE = 40
 
 const wowpanels = document.querySelectorAll('.wowpanel')
 const colors = ['#4975FB', '#924DE6', '#EF5252', '#F59500']
