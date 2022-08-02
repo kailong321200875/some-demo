@@ -4,11 +4,12 @@
 
 整理一些有趣的demo及知识点
 
-## 过渡动画相关
+## 特效相关
 
 - [CSS 帧动画](https://github.com/kailong321200875/some-demo/tree/master/src/views/frame-animation/README.md)
 - [滚动条过渡动画](https://github.com/kailong321200875/some-demo/tree/master/src/views/scroll-animation/README.md)
 - [Lottie 动画库](https://github.com/kailong321200875/some-demo/tree/master/src/views/lottie/README.md)
+- [仿锤子官网 Banner 效果](https://github.com/kailong321200875/some-demo/tree/master/src/views/3d-banner/README.md)
 
 ## 图片相关
 
@@ -25,13 +26,10 @@
 
 - [瀑布流](https://github.com/kailong321200875/some-demo/tree/master/src/views/waterfall-flow/README.md)
 
-## JavaScript 相关
-
-- [高性能的深拷贝](https://github.com/kailong321200875/some-demo/tree/master/src/views/deep-clone/README.md)
-
-## CSS 相关
+## 性能相关
 
 - [不同类型的字体](https://github.com/kailong321200875/some-demo/tree/master/src/views/fonts/README.md)
+- [高性能的深拷贝](https://github.com/kailong321200875/some-demo/tree/master/src/views/deep-clone/README.md)
 
 ## Canvas 相关
 
