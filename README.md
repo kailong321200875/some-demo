@@ -12,6 +12,7 @@
 - [仿锤子官网 Banner 效果](https://kailong321200875.github.io/some-demo/html/index.html?type=3d-banner&name=%E4%BB%BF%E9%94%A4%E5%AD%90%E5%AE%98%E7%BD%91+Banner+%E6%95%88%E6%9E%9C)
 - [单标签实现条纹背景](https://kailong321200875.github.io/some-demo/html/index.html?type=stripe-background&name=%E5%8D%95%E6%A0%87%E7%AD%BE%E5%AE%9E%E7%8E%B0%E6%9D%A1%E7%BA%B9%E8%83%8C%E6%99%AF)
 - [文字单行居中，多行居左](https://kailong321200875.github.io/some-demo/html/index.html?type=test-align&name=%E6%96%87%E5%AD%97%E5%8D%95%E8%A1%8C%E5%B1%85%E4%B8%AD%EF%BC%8C%E5%A4%9A%E8%A1%8C%E5%B1%85%E5%B7%A6)
+- [导航栏下划线跟随](https://kailong321200875.github.io/some-demo/html/index.html?type=underline-follow&name=%E5%AF%BC%E8%88%AA%E6%A0%8F%E4%B8%8B%E5%88%92%E7%BA%BF%E8%B7%9F%E9%9A%8F)
 
 ## 图片相关
 
