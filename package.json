@@ -77,12 +77,14 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.5",
+    "better-vanta": "^0.5.22",
     "bootstrap": "^5.2.0",
     "immer": "^9.0.15",
     "jquery": "^3.6.0",
     "lodash-es": "^4.17.21",
     "lottie-web": "^5.9.6",
     "minireset.css": "^0.0.7",
+    "three": "^0.143.0",
     "tool-helper": "^1.4.0"
   }
 }
