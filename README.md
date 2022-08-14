@@ -15,6 +15,7 @@
 - [导航栏下划线跟随](https://kailong321200875.github.io/some-demo/html/index.html?type=underline-follow&name=%E5%AF%BC%E8%88%AA%E6%A0%8F%E4%B8%8B%E5%88%92%E7%BA%BF%E8%B7%9F%E9%9A%8F)
 - [毛玻璃](https://kailong321200875.github.io/some-demo/html/index.html?type=ground-glass&name=%E6%AF%9B%E7%8E%BB%E7%92%83)
 - [3D 背景](https://kailong321200875.github.io/some-demo/html/index.html?type=vanta&name=3D+%E8%83%8C%E6%99%AF)
+- [全景查看器](https://kailong321200875.github.io/some-demo/html/index.html?type=pannellum&name=%E5%85%A8%E6%99%AF%E6%9F%A5%E7%9C%8B%E5%99%A8)
 
 ## 图片相关
 
