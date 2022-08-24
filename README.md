@@ -16,6 +16,7 @@
 - [毛玻璃](https://kailong321200875.github.io/some-demo/html/index.html?type=ground-glass&name=%E6%AF%9B%E7%8E%BB%E7%92%83)
 - [3D 背景](https://kailong321200875.github.io/some-demo/html/index.html?type=vanta&name=3D+%E8%83%8C%E6%99%AF)
 - [全景查看器](https://kailong321200875.github.io/some-demo/html/index.html?type=pannellum&name=%E5%85%A8%E6%99%AF%E6%9F%A5%E7%9C%8B%E5%99%A8)
+- [水印](https://kailong321200875.github.io/some-demo/html/index.html?type=watermark&name=%E6%B0%B4%E5%8D%B0)
 
 ## 图片相关
 
