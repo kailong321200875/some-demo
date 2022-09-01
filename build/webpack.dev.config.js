@@ -39,6 +39,11 @@ const devWebpackConfig = merge(baseWebpackConfig, {
 
   // 开发服务配置
   devServer: {
+    headers: {
+      "Cross-Origin-Opener-Policy": "same-origin",
+      "Cross-Origin-Embedder-Policy": "require-corp",
+      'Access-Control-Allow-Origin': '*'
+    },
     // 服务器 host，默认为 localhost
     host: '0.0.0.0',
     // 服务器端口号，默认 8080

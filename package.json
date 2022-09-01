@@ -31,6 +31,7 @@
   "homepage": "https://github.com/kailong321200875/webpack-multi-page-cli#readme",
   "devDependencies": {
     "@babel/core": "^7.18.10",
+    "@babel/eslint-parser": "^7.18.9",
     "@babel/preset-env": "^7.18.10",
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
@@ -76,6 +77,8 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@ffmpeg/core": "^0.11.0",
+    "@ffmpeg/ffmpeg": "^0.11.3",
     "@popperjs/core": "^2.11.6",
     "better-vanta": "^0.5.22",
     "bootstrap": "^5.2.0",
