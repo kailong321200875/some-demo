@@ -1,0 +1,82 @@
+@import '~minireset.css/minireset.css';
+@import '@/assets/fonts/iconfont.css';
+
+ul {
+  li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    padding-left: 30px;
+    counter-increment: demo;
+  }
+}
+
+.order-number-1 {
+  li::before {
+    content: counter(demo, cjk-decimal) '.';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+}
+
+.order-number-2 {
+  li::before {
+    content: counter(demo, decimal) '.';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+}
+
+.order-number-3 {
+  li::before {
+    content: counter(demo, lower-latin) '.';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+}
+
+.order-number-4 {
+  li::before {
+    content: counter(demo, lower-roman) '.';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+}
+
+.order-number-5 {
+  li::before {
+    content: counter(demo, circle) '.';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+}
+
+.order-number-6 {
+  li::before {
+    content: counter(demo, square) '.';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+}
+
+.order-number-7 {
+  li::before {
+    content: counter(demo, disc) '.';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+}

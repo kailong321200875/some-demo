@@ -17,6 +17,7 @@
 - [3D 背景](https://kailong321200875.github.io/some-demo/html/index.html?type=vanta&name=3D+%E8%83%8C%E6%99%AF)
 - [全景查看器](https://kailong321200875.github.io/some-demo/html/index.html?type=pannellum&name=%E5%85%A8%E6%99%AF%E6%9F%A5%E7%9C%8B%E5%99%A8)
 - [水印](https://kailong321200875.github.io/some-demo/html/index.html?type=watermark&name=%E6%B0%B4%E5%8D%B0)
+- [序号列表](https://kailong321200875.github.io/some-demo/html/index.html?ype=order-number&name=序号列表)
 
 ## 图片相关
 
