@@ -1,7 +1,7 @@
 import './deep-clone.less'
 import '@/styles/base.css'
 
-import produce from 'immer'
+import { produce } from 'immer'
 import { cloneDeep } from 'lodash-es'
 
 // 50-100的随机整数
