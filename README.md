@@ -25,6 +25,7 @@
 - [图片懒加载](https://kailong321200875.github.io/some-demo/html/index.html?type=img-lazy-load&name=%E5%9B%BE%E7%89%87%E6%87%92%E5%8A%A0%E8%BD%BD)
 - [放大镜](https://kailong321200875.github.io/some-demo/html/index.html?type=magnifier&name=%E6%94%BE%E5%A4%A7%E9%95%9C)
 - [交互式图片鼠标悬停景深对焦效果](https://kailong321200875.github.io/some-demo/html/index.html?type=deep-focus&name=%E4%BA%A4%E4%BA%92%E5%BC%8F%E5%9B%BE%E7%89%87%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E6%99%AF%E6%B7%B1%E5%AF%B9%E7%84%A6%E6%95%88%E6%9E%9C)
+- [dom转图片](https://kailong321200875.github.io/some-demo/html/index.html?type=dom-to-iamge&name=dom%E8%BD%AC%E5%9B%BE%E7%89%87)
 
 ## 视频相关
 
