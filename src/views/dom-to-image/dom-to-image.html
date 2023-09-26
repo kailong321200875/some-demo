@@ -16,7 +16,6 @@
       .wrap {
         width: 500px;
         height: 500px;
-        background-color: red;
         position: relative;
       }
       .inner {
@@ -46,13 +45,16 @@
     <div>
       <button id="create-image">生成图片</button>
     </div>
-    <div class="wrap">
-      <img
-        src="https://img-qn.51miz.com/preview/photo/00/01/67/18/P-1671877-09DE11BE.png"
-        crossorigin="anonymous"
-        alt="error"
-      />
-      <div class="inner">朕</div>
+    <div id="img-wrap" style="display: flex">
+      <div class="wrap">
+        <img
+          src="https://img-qn.51miz.com/preview/photo/00/01/67/18/P-1671877-09DE11BE.png"
+          crossorigin="anonymous"
+          alt="error"
+        />
+        <div class="inner">朕</div>
+      </div>
+      <div id="wrap2" class="wrap"> </div>
     </div>
   </body>
 </html>
